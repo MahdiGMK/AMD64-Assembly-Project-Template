@@ -1,4 +1,4 @@
-ASM_NAME = sample_minimal_while
+ASM_NAME = 12_sample_minimal_function2
 OBJS= $(ASM_NAME).o main.o
 OUTPUT_NAME= exec
 
