@@ -12,7 +12,7 @@ asm_main:
     mov edx, [rsp + 4]
     mov esi, [rsp]
 
-    ; if(rax == rbx) {if_body} else {else_body}
+    ; if(esi == edx) {if_body} else {else_body}
 ;if_check:
     cmp esi, edx
     je if_body

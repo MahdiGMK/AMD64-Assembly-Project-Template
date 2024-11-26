@@ -1,4 +1,4 @@
-ASM_NAME = sample_minimal_if
+ASM_NAME = sample_minimal_if2
 OBJS= $(ASM_NAME).o main.o
 OUTPUT_NAME= exec
 
