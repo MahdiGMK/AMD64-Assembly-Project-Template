@@ -1,17 +1,27 @@
+extern printf
+extern scanf
 global asm_main
 section .text
 asm_main:
+    sub rsp, 8
     
+    lea rdx, [rsp + 4] ; second input
+    lea rsi, [rsp] ; first input
+    mov rdi, format
+    call scanf
+    mov edx, [rsp + 4]
+    mov esi, [rsp]
+
     ; if(rax == rbx) {if_body} else {else_body}
 ;if_check:
-    cmp rax, rbx
-    jeq if_body
+    cmp esi, edx
+    je if_body
 else_body:
     ; else action
     mov rdi, failure
     call printf
 
-    j if_end
+    jmp if_end
 if_body:
     ; if action
     mov rdi, success
@@ -19,8 +29,10 @@ if_body:
 if_end:
 
 
+    add rsp, 8
     ret
 
 section .data
-success: db "rax == rbx", 10, 0
-failure: db "rax != rbx", 10, 0
+format: db "%d%d", 0
+success: db "%d == %d", 10, 0
+failure: db "%d != %d", 10, 0
