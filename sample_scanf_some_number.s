@@ -1,5 +1,6 @@
 global asm_main
-extern printf
+extern printf 
+extern scanf
 section .text
 ; SystemV AMD64 ABI 
 ; Integer Function arguments : RDI, RSI, RDX, RCX, R8, R9, (Extra on stack)
@@ -12,10 +13,12 @@ asm_main:
     ; when asm_main is called, return address is pushed on stack
     ; so rsp%16 = 8 => we need to fix this by rsp-=8
 
+    mov rdi, scanf_format ; scanf format
+    mov rsi, rsp ; load to top of stack
+    ;lea rsi, [test_number] ; you might also use address to global vars
+    call scanf
     mov rdi, hello_world ; printf format
-    movss xmm0, [test_float] ; load test_float to xmm0(first float arg)
-    cvtss2sd xmm0, xmm0 ; convert float to double
-    ; printf works with double
+    mov rsi, [rsp] ; load number from stack
     call printf
 
 
@@ -25,5 +28,6 @@ asm_main:
     ret
     
 section .data
-hello_world: db "hello world %f" , 10 , 0,
-test_float: dd 12.34,
+scanf_format: db "%d", 0,
+hello_world: db "your input was: %d" , 10 , 0,
+test_number: dd 123,

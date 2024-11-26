@@ -1,1 +1,3 @@
 *.o
+exec
+a.out

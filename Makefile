@@ -1,4 +1,4 @@
-ASM_NAME = sample_printf_some_number
+ASM_NAME = sample_scanf_some_number
 OBJS= $(ASM_NAME).o main.o
 OUTPUT_NAME= exec
 
