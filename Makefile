@@ -5,7 +5,7 @@ OUTPUT_NAME= exec
 build: $(OUTPUT_NAME)
 
 clean:
-	@rm $(OUTPUT_NAME)
+	@rm $(OUTPUT_NAME) **.o
 
 run: $(OUTPUT_NAME)
 	@./$(OUTPUT_NAME) && echo $$? || echo $$?
