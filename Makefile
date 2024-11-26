@@ -1,4 +1,4 @@
-ASM_NAME = 12_sample_minimal_function2
+ASM_NAME = 13_sample_minimal_args
 OBJS= $(ASM_NAME).o main.o
 OUTPUT_NAME= exec
 

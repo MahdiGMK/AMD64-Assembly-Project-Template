@@ -22,4 +22,4 @@ asm_main:
     ret
     
 section .data
-hello_world: db "hello world" , 10 , 0
+hello_world: db "hello world" , 10 , 0; 10=='\n' , 0=='\0' (c convention)
