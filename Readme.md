@@ -5,6 +5,18 @@
     نیاز داریم که توسط دستور زیر دریافت میشوند.
     
     sudo apt update && sudo apt install gcc nasm make
+       
+<h2> نحوه استفاده در ویندوز </h2>
+    برای استفاده از این مخزن در محیط ویندوز به ابزار
+    WSL 
+    نیازمند هستید. 
+    لینک های مقابل میتوانند راهنمای خوبی باشند : 
+
+[WSL Install Doc](https://learn.microsoft.com/en-us/windows/wsl/install)
+[Ubuntu Store Page](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=US)
+
+<!-- <h2> نحوه استفاده در مک </h2> -->
+<!--     برای استفاده از این مخزن در محیط مک به ابزار -->
 
 <h1> نحوه استفاده </h1>
 
