@@ -15,8 +15,12 @@
 [WSL Install Doc](https://learn.microsoft.com/en-us/windows/wsl/install)
 [Ubuntu Store Page](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=US)
 
-<!-- <h2> نحوه استفاده در مک </h2> -->
-<!--     برای استفاده از این مخزن در محیط مک به ابزار -->
+<h2> نحوه استفاده در مک </h2>
+برای استفاده از این مخزن در مک به ابزار های مجازی سازی نیازمندیم. در ویدئوی زیر نحوه استفاده از ابزار UTM در مک و بالا آوردن سیستم عامل Ubuntu-server تحت amd64 را مشاهده میکنیم.
+
+![MacUTM](https://github.com/MahdiGMK/AMD64-Assembly-Project-Template/raw/refs/heads/master/mac_utm.mp4)
+
+با تشکر از کسری احمدی بابت تهیه این آموزش.
 
 <h1> نحوه استفاده </h1>
 
