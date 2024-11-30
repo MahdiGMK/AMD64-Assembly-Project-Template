@@ -2,9 +2,15 @@
 <h1> برنامه های پیشنیاز </h1>
 برای اجرای برنامه های به زبان اسمبلی به ۳ ابزار 
     gcc و nasm و make
-    نیاز داریم که توسط دستور زیر دریافت میشوند.
+    نیاز داریم که توسط دستور زیر دریافت میشوند. 
+    همچنین به این نیاز داریم که مخزن را روی 
     
+<div dir="ltr">
+
     sudo apt update && sudo apt install gcc nasm make
+    git clone https://github.com/MahdiGMK/AMD64-Assembly-Project-Template x86env && cd x86env
+
+</div>
        
 <h2> نحوه استفاده در ویندوز </h2>
     برای استفاده از این مخزن در محیط ویندوز به ابزار
@@ -16,7 +22,13 @@
 [Ubuntu Store Page](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=US)
 
 <h2> نحوه استفاده در مک </h2>
-برای استفاده از این مخزن در مک به ابزار های مجازی سازی نیازمندیم. در ویدئوی زیر نحوه استفاده از ابزار UTM در مک و بالا آوردن سیستم عامل Ubuntu-server تحت amd64 را مشاهده میکنیم.
+برای استفاده از این مخزن در مک به ابزار های مجازی سازی نیازمندیم. در ویدئوی زیر نحوه استفاده از ابزار
+UTM
+در مک و بالا آوردن سیستم عامل 
+Ubuntu-server
+تحت
+amd64
+را مشاهده میکنیم.
 
 ![MacUTM](https://github.com/MahdiGMK/AMD64-Assembly-Project-Template/raw/refs/heads/master/mac_utm.mp4)
 
