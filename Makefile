@@ -11,7 +11,7 @@ run: $(OUTPUT_NAME)
 	@./$(OUTPUT_NAME) && echo $$? || echo $$?
 
 $(OUTPUT_NAME): $(OBJS) Makefile
-	@gcc -no-pie -o $(OUTPUT_NAME) $(OBJS)
+	@gcc -z noexecstack -no-pie -o $(OUTPUT_NAME) $(OBJS)
 
 %.o: %.s
 	@nasm -felf64 $< -o $@
