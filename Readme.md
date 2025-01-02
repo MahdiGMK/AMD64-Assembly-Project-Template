@@ -7,7 +7,7 @@
     
 <div dir="ltr">
 
-    sudo apt update && sudo apt install gcc nasm make
+    sudo apt update && sudo apt install gcc nasm make build-essential
     git clone https://github.com/MahdiGMK/AMD64-Assembly-Project-Template x86env && cd x86env
 
 </div>
